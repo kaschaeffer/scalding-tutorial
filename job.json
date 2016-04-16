@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "scalding-tutorial",
+    "Args": [
+      "com.github.kaschaeffer.Tutorial",
+      "--input",
+      "s3://scalding.tutorial/hello.txt",
+      "--output",
+      "s3://scalding.tutorial/output.txt",
+      "--hdfs"
+    ],
+    "Jar": "s3://scalding.tutorial/scalding-tutorial-assembly-SNAPSHOT-0.1.jar",
+    "ActionOnFailure": "CONTINUE",
+    "Type": "CUSTOM_JAR"
+  }
+]
+
